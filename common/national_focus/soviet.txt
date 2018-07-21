@@ -1,0 +1,596 @@
+focus_tree = {
+	
+	id = russia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			original_tag = SOV
+		}
+	}
+	
+ continuous_focus_position = { x = 50 y = 1700 }
+ 
+ #Focus for 30th Congress of the CPSU
+ focus = { 
+ id = thirtiethcongressofthecpsu 
+ icon = lenin 
+ ai_will_do = { factor = 0 } 
+ x = 15 
+ y = 0
+ cost = 10 
+ available_if_capitulated = yes 
+ 
+ completion_reward = {
+			country_event = election_SOV.1
+			}
+ 
+ }#Focus for Comrade Putin 
+		focus = { 
+		id = comradeputin 
+		icon = comrade_putin 
+		ai_will_do = { factor = 0 } 
+ x = 1 
+ y = 1 
+ mutually_exclusive = { focus = comradekuchma  focus = comradenazarbayev  focus = comradelimonov  focus = comradepugo  focus = comradetyulkin} 
+ prerequisite = { focus = thirtiethcongressofthecpsu} 
+ cost = 1  
+  available_if_capitulated = yes  
+ }#Focus for Comrade Nazarbayev 
+		focus = { 
+		id = comradenazarbayev 
+		icon = comrade_nazarbayev 
+		ai_will_do = { factor = 0 } 
+ x = 6 
+ y = 1 
+ mutually_exclusive = { focus = comradekuchma  focus = comradelimonov  focus = comradepugo  focus = comradetyulkin  focus = comradeputin} 
+ prerequisite = { focus = thirtiethcongressofthecpsu} 
+ cost = 1  
+  available_if_capitulated = yes  
+ }#Focus for Comrade Kuchma 
+		focus = { 
+		id = comradekuchma 
+		icon = comrade_kuchma 
+		ai_will_do = { factor = 0 } 
+ x = 11 
+ y = 1 
+ mutually_exclusive = { focus = comradelimonov  focus = comradepugo  focus = comradetyulkin  focus = comradeputin  focus = comradenazarbayev} 
+ prerequisite = { focus = thirtiethcongressofthecpsu} 
+ cost = 1  
+  available_if_capitulated = yes  
+ }#Focus for Comrade Pugo 
+		focus = { 
+		id = comradepugo 
+		icon = comrade_pugo 
+		ai_will_do = { factor = 0 } 
+ x = 16 
+ y = 1 
+ mutually_exclusive = { focus = comradelimonov  focus = comradeputin  focus = comradenazarbayev  focus = comradekuchma  focus = comradetyulkin} 
+ prerequisite = { focus = thirtiethcongressofthecpsu} 
+ cost = 1  
+  available_if_capitulated = yes  
+ }#Focus for Comrade Tyulkin 
+		focus = { 
+		id = comradetyulkin 
+		icon = comrade_tyulkin 
+		ai_will_do = { factor = 0 } 
+ x = 21 
+ y = 1 
+ mutually_exclusive = { focus = comradelimonov  focus = comradeputin  focus = comradenazarbayev  focus = comradekuchma  focus = comradepugo} 
+ prerequisite = { focus = thirtiethcongressofthecpsu} 
+ cost = 1  
+  available_if_capitulated = yes  
+ }#Focus for Comrade Limonov??! 
+		focus = { 
+		id = comradelimonov 
+		icon = comrade_limonov 
+		ai_will_do = { factor = 0 } 
+ x = 26 
+ y = 1 
+ mutually_exclusive = { focus = comradeputin  focus = comradenazarbayev  focus = comradekuchma  focus = comradetyulkin  focus = comradepugo} 
+ prerequisite = { focus = thirtiethcongressofthecpsu} 
+ cost = 1  
+  available_if_capitulated = yes  
+ 
+ }#Path for Tyulkin
+ focus = { 
+		id = stalinistperestroika
+		icon = communism3
+ x = 21 
+ y = 2	
+ prerequisite = { focus = comradetyulkin}
+ cost = 8
+  available_if_capitulated = yes  
+ 
+ completion_reward = {
+			country_event = russia.2
+			}
+}
+ focus = { 
+		id = purge_the_weaklings
+		icon = purge_weaklings
+ x = 21 
+ y = 3	
+ prerequisite = { focus = stalinistperestroika}
+ cost = 13
+  available_if_capitulated = yes  
+ 
+ completion_reward = {
+			add_popularity = { ideology = communist popularity = 0.15 }
+			add_stability = -0.10
+			}
+}
+ focus = { 
+		id = formally_abolish_1995_constitution
+		icon = forceful_treaty
+ x = 21 
+ y = 4	
+ prerequisite = { focus = purge_the_weaklings}
+ cost = 12
+  available_if_capitulated = yes  
+ 
+ completion_reward = {
+			remove_ideas = SOV_1995_constitution
+			add_popularity = { ideology = communist popularity = 0.15 }
+			add_stability = -0.10
+			}
+}
+ focus = { 
+		id = conclude_the_purges
+		icon = communism8
+ x = 21 
+ y = 5	
+ prerequisite = { focus = formally_abolish_1995_constitution}
+ cost = 10
+  available_if_capitulated = yes  
+ 
+ completion_reward = {
+			add_popularity = { ideology = communist popularity = 0.10 }
+			add_stability = 0.40
+			}
+}			
+ focus = { 
+        id = acknowledge_the_correctness_of_mao
+		icon = maoism
+ x = 20 
+ y = 6	
+ prerequisite = { focus = conclude_the_purges}
+ cost = 5
+  available_if_capitulated = yes
+  
+  completion_reward = {
+			add_political_power = 100
+			}
+}			
+ focus = { 
+        id = renationalize_industry
+		icon = industry_communist
+ x = 22 
+ y = 6	
+ prerequisite = { focus = conclude_the_purges}
+ cost = 8
+  available_if_capitulated = yes
+ 
+}			
+ focus = { 
+        id = agitprop_for_the_digital_age
+		icon = agitprop_for_the_digital_age
+ x = 20 
+ y = 7	
+ prerequisite = { focus = acknowledge_the_correctness_of_mao}
+ cost = 10
+  available_if_capitulated = yes 
+  
+  completion_reward = {
+			add_stability = 0.10
+			add_political_power = 50
+			}
+}		
+ focus = { 
+        id = crack_down_on_islamists
+		icon = crack_down_on_islamists
+ x = 22 
+ y = 7	
+ prerequisite = { focus = renationalize_industry}
+ cost = 10
+  available_if_capitulated = yes 
+  
+  completion_reward = {
+  swap_ideas = {
+  remove_idea = SOV_ghosts_of_afghanistan
+  add_idea = SOV_ghosts_of_afghanistan_2
+			}
+		}
+}		
+		focus = { 
+        id = restart_the_cold_war
+		icon = enemy_of_america
+ x = 21 
+ y = 9	
+ prerequisite = { focus = rejuvinate_the_party_cadres}
+ cost = 10
+  available_if_capitulated = yes 
+  
+  completion_reward = {
+  swap_ideas = {
+  remove_idea = SOV_ghosts_of_afghanistan_2
+  add_idea = SOV_ghosts_of_afghanistan_3          
+			}
+		}	
+}
+ focus = { 
+        id = rejuvinate_the_party_cadres
+		icon = communism5
+ x = 21 
+ y = 8	
+ prerequisite = { focus = crack_down_on_islamists}
+ prerequisite = {focus = agitprop_for_the_digital_age}
+ cost = 10
+  available_if_capitulated = yes 
+  
+  completion_reward = {
+  remove_ideas = SOV_corrupt_oligarchy
+			}
+}				
+focus = { 
+        id = ready_your_engines_we_go_to_war
+		icon = national_greatness
+ x = 21 
+ y = 10	
+ prerequisite = { focus = restart_the_cold_war}
+ cost = 10
+  available_if_capitulated = yes 
+  
+  completion_reward = {
+  remove_ideas = SOV_ghosts_of_afghanistan_3
+			}
+}
+focus = { 
+        id = death_to_the_capitalist_west
+		icon = attack_democracy3
+ x = 21 
+ y = 11	
+ prerequisite = { focus = ready_your_engines_we_go_to_war}
+ cost = 10
+  available_if_capitulated = yes 
+  completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = USA
+			}
+		}
+}
+
+ #Soviet Armed Forces path
+ focus = { 
+        id = Soviet_Armed_Forces
+		icon = army_officers_communist
+ x = 39
+ y = 0	
+  prerequisite = { focus = thirtiethcongressofthecpsu}
+ cost = 5
+  available_if_capitulated = yes
+  
+  completion_reward = {
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+			}
+}
+
+focus = { 
+        id = Soviet_Army
+		icon = communism4
+ x = 34
+ y = 1	
+  prerequisite = { focus = Soviet_Armed_Forces}
+ cost = 5
+  available_if_capitulated = yes
+  
+  completion_reward = {
+            army_experience = 25
+			}
+}	
+
+focus = { 
+        id = Soviet_Navy
+		icon = soviet_navy
+ x = 39
+ y = 1	
+  prerequisite = { focus = Soviet_Armed_Forces}
+ cost = 5
+  available_if_capitulated = yes
+  
+  completion_reward = {
+            navy_experience = 25
+			}
+}
+
+focus = { 
+        id = Soviet_Air_Forces
+		icon = soviet_air_forces
+ x = 44
+ y = 1	
+  prerequisite = { focus = Soviet_Armed_Forces}
+ cost = 5
+  available_if_capitulated = yes
+  
+  completion_reward = {
+            air_experience = 25
+			}
+}
+
+focus = { 
+        id = revitalize_izhmash
+		icon = small_arms5
+ x = 33
+ y = 2	
+  prerequisite = { focus = Soviet_Army}
+ cost = 7
+  available_if_capitulated = yes
+  
+  completion_reward = {
+            add_ideas = SOV_gun_funding
+	        }		
+}
+
+focus = { 
+        id = modernize_the_armored_forces
+		icon = t90
+ x = 35
+ y = 2	
+  prerequisite = { focus = Soviet_Army}
+ cost = 5
+  available_if_capitulated = yes
+  
+  bypass = {
+			has_tech = gen1_mbt
+			has_tech = gen2_mbt
+			has_tech = gen3_mbt
+			has_tech = modern_gen3_mbt
+			has_tech = advanced_gen3_mbt
+			has_tech = gen4_mbt
+			has_tech = gen5_mbt
+			has_tech = gen6_mbt
+		}
+  
+  completion_reward = {
+            add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.10
+				technology = gen1_mbt
+				technology = gen2_mbt
+				technology = gen3_mbt
+				technology = modern_gen3_mbt
+				technology = advanced_gen3_mbt
+				technology = gen4_mbt
+				technology = gen5_mbt
+				technology = gen6_mbt
+
+			}	
+		}	
+}
+
+focus = { 
+        id = march_of_the_artillerymen
+		icon = artillery2
+ x = 35
+ y = 3
+  prerequisite = { focus = modernize_the_armored_forces}
+ cost = 5
+  available_if_capitulated = yes
+  
+  bypass = {
+			has_tech = artillery1
+			has_tech = artillery2
+			has_tech = artillery3
+			has_tech = artillery4
+			has_tech = artillery5
+		}
+  
+  completion_reward = {
+            add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.10
+	            technology = artillery1
+				technology = artillery2
+				technology = artillery3
+				technology = artillery4
+				technology = artillery5
+			}	
+		}	
+}
+
+focus = { 
+        id = issue_a_new_automat
+		icon = small_arms5
+ x = 33
+ y = 3
+  prerequisite = { focus = revitalize_izhmash}
+ cost = 5
+  available_if_capitulated = yes
+  
+  bypass = {
+            has_tech = infantry_weapons
+			has_tech = infantry_weapons1
+			has_tech = infantry_weapons2
+			has_tech = improved_infantry_weapons
+			has_tech = improved_infantry_weapons_2
+			has_tech = advanced_infantry_weapons
+			has_tech = advanced_infantry_weapons2
+		}
+  
+  completion_reward = {
+            add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.10
+                technology = infantry_weapons
+				technology = infantry_weapons1
+				technology = infantry_weapons2
+				technology = improved_infantry_weapons
+				technology = improved_infantry_weapons_2
+				technology = advanced_infantry_weapons
+				technology = advanced_infantry_weapons2
+			}	
+		}	
+}
+
+focus = { 
+        id = maskirovka
+		icon = army_logistics
+ x = 34
+ y = 4
+ 
+  prerequisite = { 
+  focus = march_of_the_artillerymen
+  focus = issue_a_new_automat
+  }
+  
+ cost = 8
+  available_if_capitulated = yes
+  
+  completion_reward = {
+            add_ideas = SOV_maskirovka
+	        }		
+}
+
+focus = { 
+        id = soviet_army_doctrine_for_the_21st_century
+		icon = army_officers_communist
+ x = 34
+ y = 5
+ 
+  prerequisite = { focus = maskirovka }
+  
+  cost = 10
+  available_if_capitulated = yes
+  
+  completion_reward = {
+            add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.15
+				uses = 2
+				category = land_doctrine
+			}
+	    }		
+}
+
+focus = { 
+        id = re_equip_the_spetsnaz
+		icon = special_forces
+ x = 34
+ y = 6
+ 
+  prerequisite = { focus = soviet_army_doctrine_for_the_21st_century }
+  
+  cost = 7
+  available_if_capitulated = yes
+  
+  bypass = {
+			has_tech = special_forces
+			has_tech = special_forces2
+			has_tech = special_forces3
+			has_tech = special_forces4
+			has_tech = special_forces5
+			has_tech = special_forces6
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = submarine_bonus
+				bonus = 0.40
+				uses = 2
+				technology = special_forces
+				technology = special_forces2
+				technology = special_forces3
+				technology = special_forces4
+				technology = special_forces5
+				technology = special_forces6
+			}
+		}
+}
+		
+focus = { 
+        id = soviet_naval_infantry
+		icon = amphibious_assault
+ x = 37
+ y = 2	
+  prerequisite = { focus = Soviet_Army}
+  prerequisite = { focus = Soviet_Navy}
+ cost = 7
+  available_if_capitulated = yes
+  
+  completion_reward = {
+            add_ideas = SOV_naval_infantry
+	        }		
+}
+
+focus = { 
+        id = soviet_submarines
+		icon = submarines
+ x = 39
+ y = 2	
+ 
+  prerequisite = { focus = Soviet_Navy}
+ cost = 10
+  available_if_capitulated = yes
+  
+  completion_reward = {
+            add_ideas = SOV_submarines
+	        }		
+}
+
+focus = { 
+        id = yasen_class_submarines 
+		icon = submarines
+ x = 39
+ y = 3	
+ 
+  prerequisite = { focus = soviet_submarines}
+  cost = 10
+  available_if_capitulated = yes
+  bypass = {
+			has_tech = submarine1
+			has_tech = submarine2
+			has_tech = submarine3
+			has_tech = submarine4
+			has_tech = submarine5
+			has_tech = submarine6
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = submarine_bonus
+				bonus = 0.50
+				technology = submarine1
+				technology = submarine2
+				technology = submarine3
+				technology = submarine4
+				technology = submarine5
+				technology = submarine6
+			}
+		}
+}
+		
+#Soviet Economy path
+focus = { 
+        id = Soviet_economy
+		icon = five_year_plan
+ x = 54
+ y = 0	
+  prerequisite = { focus = thirtiethcongressofthecpsu}
+ cost = 10
+  available_if_capitulated = yes
+  
+  completion_reward = {
+        add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.10
+				uses = 3
+				category = industry
+			}
+}			
+ }#End of focuses 
+}
