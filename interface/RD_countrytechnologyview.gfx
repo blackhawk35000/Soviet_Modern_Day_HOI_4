@@ -1,0 +1,57 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_mass_assault_bg"
+		textureFile = "gfx/interface/RDmass_assault_bg.dds"
+		allwaystransparent = yes		
+	}
+
+	spriteType = {
+		name = "GFX_mob_warfare_bg"
+		textureFile = "gfx/interface/RDmob_warfare_bg.dds"
+		allwaystransparent = yes		
+	}
+
+	spriteType = {
+		name = "GFX_grand_battleplan_bg"
+		textureFile = "gfx/interface/RDgrand_battleplan_bg.dds"
+		allwaystransparent = yes		
+	}
+
+	spriteType = {
+		name = "GFX_sup_firepower_bg"
+		textureFile = "gfx/interface/RDsup_firepower_bg.dds"
+		allwaystransparent = yes		
+	}
+	
+	spriteType = {
+		name = "GFX_air_techtree_bg"
+		textureFile = "gfx/interface/RDair_techtree_bg.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_armortech_bg"
+		textureFile = "gfx/interface/RDarmortech_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_infantry_techtree_bg"
+		textureFile = "gfx/interface/RDinfantry_techtree_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_artillery_techtree_bg"
+		textureFile = "gfx/interface/RDartillery_techtree_bg.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_support_techtree_bg"
+		textureFile = "gfx/interface/RDsupport_techtree_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_naval_techtree_bg"
+		textureFile = "gfx/interface/RDnaval_techtree_bg.dds"
+		allwaystransparent = yes		
+	}
+}
