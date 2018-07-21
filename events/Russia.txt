@@ -1,0 +1,77 @@
+﻿add_namespace = russia
+
+#Kursk Submarine Disaster
+country_event = {
+	id = russia.1
+	title = russia.1.t
+	desc = russia.1.d
+	picture = GFX_report_event_kursk_sinking
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		date > 2000.8.10
+		date < 2001.1.1
+		not = { has_country_flag = sov_kursk_sinking }
+	}
+	
+	immediate = {
+		set_country_flag = sov_kursk_sinking
+	}
+	
+	option = {	#Horrible!
+		name = russia.1.o1
+		navy_experience = 2
+		add_stability = -0.02
+		add_political_power = -10
+		add_popularity = {
+			ideology = communist
+			popularity = -0.03
+		}
+		news_event = {
+			hours = 6
+			id = news.50
+		}
+	}
+}
+country_event = {
+	id = russia.2
+    title = russia.2.t 
+    desc = russia.2.d 
+	picture = GFX_report_event_putin_coup_1
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = SOV
+	}
+	
+	immediate = {
+		set_country_flag = russia.2
+	}
+	
+	    option = {
+		name = russia.2.o1
+		news_event = russia_news.7
+		add_stability = -0.10
+		add_political_power = -25
+		add_popularity = {
+			ideology = communist
+			popularity = -0.15
+		}
+		add_popularity = {
+			ideology = democratic_socialist
+			popularity = -0.10
+		}
+	
+	     create_country_leader = {
+		 name = "Vladislav Surkov"
+		 ideology = democratic_socialist_ideology
+			
+	    }
+	}
+}
+
+	
+

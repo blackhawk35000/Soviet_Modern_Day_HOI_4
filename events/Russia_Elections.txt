@@ -1,0 +1,184 @@
+﻿add_namespace = election_SOV
+
+#Soviet Election of 2000
+country_event = {
+	id = election_SOV.1
+	title = election_SOV.1.t
+	desc = election_SOV.1.d
+	picture = GFX_news_event_kremlin
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = SOV
+	}
+	
+	immediate = {
+		set_country_flag = russia_election_2000
+	}
+	
+	option = {
+		name = election_SOV.1.o1
+		
+		set_politics = {
+			ruling_party = democratic_socialist
+			elections_allowed = no
+		}
+		effect_tooltip = {
+			create_country_leader = {
+				name = "Vladimir Putin"
+				picture = "Vladimir_Putin.dds"
+				ideology = democratic_socialist_ideology
+				traits = {
+					popular_figurehead
+				}
+			}
+		}
+		
+		news_event = russia_news.1
+		add_popularity = { ideology = democratic_socialist popularity = 0.20 }
+		
+		ai_chance = {
+			base = 25
+		}
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = thirtiethcongressofthecpsu
+				}
+				complete_national_focus = comradeputin
+			}
+		}
+	}
+	
+	option = {
+		name = election_SOV.1.o2
+			create_country_leader = {
+				name = "Nursultan Nazarbayev"
+				picture = "Nursultan_Nazarbayev.dds"
+				ideology = leninist
+			}
+		
+		news_event = russia_news.2
+		add_popularity = { ideology = communist popularity = 0.15 }
+		
+		ai_chance = {
+			base = 25
+			}
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = thirtiethcongressofthecpsu
+				}
+				complete_national_focus = comradenazarbayev
+			}
+		}
+	}
+	
+	option = {
+		name = election_SOV.1.o3
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}
+		
+		effect_tooltip = {
+			create_country_leader = {
+				name = "Leonid Kuchma"
+				picture = "Leonid_Kuchma.dds"
+				ideology = social_democrat_ideology
+			}
+		}
+		
+		news_event = russia_news.3
+		add_popularity = { ideology = social_democrat popularity = 0.25 }
+		
+		ai_chance = {
+			base = 10
+			}
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = thirtiethcongressofthecpsu
+				}
+				complete_national_focus = comradekuchma
+			}
+		}
+	}
+	
+	option = {
+		name = election_SOV.1.o4
+			create_country_leader = {
+				name = "Boris Pugo"
+				picture = "Boris_Pugo.dds"
+				ideology = leninist
+			}
+		
+		news_event = russia_news.4
+		add_popularity = { ideology = communist popularity = 0.15 }
+		
+		ai_chance = {
+			base = 20
+            }
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = thirtiethcongressofthecpsu
+				}
+				complete_national_focus = comradepugo
+			}
+		}
+	}
+	option = {
+		name = election_SOV.1.o5
+			create_country_leader = {
+				name = "Viktor Tyulkin"
+				picture = "Viktor_Tyulkin.dds"
+				ideology = stalinist
+			}
+		
+		news_event = russia_news.5
+		add_popularity = { ideology = communist popularity = 0.15 }
+		
+		ai_chance = {
+			base = 15
+            }
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = thirtiethcongressofthecpsu
+				}
+				complete_national_focus = comradetyulkin
+			}	
+		}		
+	}			
+	option = {
+		name = election_SOV.1.o6
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = no
+		}
+		
+		effect_tooltip = {
+			create_country_leader = {
+				name = "Eduard Limonov"
+				picture = "Eduard_Limonov.dds"
+				ideology = proto_fascist
+			}
+		}
+		
+		news_event = russia_news.6
+		add_popularity = { ideology = nationalist popularity = 0.25 }
+		
+		ai_chance = {
+			base = 5
+            }
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = thirtiethcongressofthecpsu
+				}
+				complete_national_focus = comradelimonov
+		}		
+	}			
+}
