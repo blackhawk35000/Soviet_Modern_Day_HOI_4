@@ -1,0 +1,22 @@
+state={
+	id=919
+	name="Baikonur"
+	
+	history={
+		owner = SOV
+		add_core_of = KAZ
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 3
+			rocket_site = 1
+		}
+	}
+	
+	provinces={
+		7597
+	}
+	manpower= 32457
+	buildings_max_level_factor=1.000
+	
+	state_category = state_level_1
+}

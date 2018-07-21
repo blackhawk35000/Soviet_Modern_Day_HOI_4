@@ -1,0 +1,23 @@
+state={
+	id=918
+	name="Pripyat"
+	
+	history={
+		owner = SOV
+		add_core_of = UKR
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 4
+			nuclear_reactor = 1
+			radar_station = 1
+		}
+	}
+	
+	provinces={
+		9568
+	}
+	manpower= 56475
+	buildings_max_level_factor=1.000
+	
+	state_category = state_level_1
+}
