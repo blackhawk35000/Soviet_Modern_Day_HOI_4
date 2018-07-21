@@ -1,0 +1,277 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "hoi4mainthemeallies.ogg"
+	volume = 0.65
+}
+
+# General Peace:
+music = {
+	name = "general_peace_1"
+	file = "general_peace_heartsofmen.ogg"
+	volume = 0.65
+}
+music = {
+	name = "general_peace_2"
+	file = "thewarends.ogg"
+	volume = 0.65
+}
+music = {
+	name = "general_peace_3"
+	file = "asongforthechildrenofww2.ogg"
+	volume = 0.65
+}
+
+# General war:
+music = {
+	name = "general_war_1"
+	file = "general_war_bringforththetanks.ogg"
+	volume = 0.65
+}
+music = {
+	name = "general_war_2"
+	file = "general_war_theattack.ogg"
+	volume = 0.65
+}
+
+
+# Allies Peace:
+music = {
+	name = "allies_peace_1"
+	file = "allies_peace_morningofdday.ogg"
+	volume = 0.65
+}
+music = {
+	name = "allies_peace_2"
+	file = "endofthetour.ogg"
+	volume = 0.65
+}
+
+
+# Allies War:
+music = {
+	name = "allies_war_1"
+	file = "wearesoldiers.ogg"
+	volume = 0.65
+}
+music = {
+	name = "allies_war_2"
+	file = "allies_war_theroyalairforce.ogg"
+	volume = 0.65
+}
+
+
+# Axis Peace:
+music = {
+	name = "axis_peace_1"
+	file = "axis_peace_krakow.ogg"
+	volume = 0.65
+}
+music = {
+	name = "axis_peace_2"
+	file = "luftwaffemarch_reprise.ogg"
+	volume = 0.65
+}
+
+
+# Axis War:
+music = {
+	name = "axis_war_1"
+	file = "axistheme.ogg"
+	volume = 0.65
+}
+music = {
+	name = "axis_war_2"
+	file = "heavywater.ogg"
+	volume = 0.65
+}
+music = {
+	name = "axis_war_3"
+	file = "operationbarbarossa.ogg"
+	volume = 0.65
+}
+music = {
+	name = "axis_war_4"
+	file = "war_axis_1_daysofthunder.ogg"
+	volume = 0.65
+}
+
+
+# Comintern Peace:
+
+music = {
+	name = "comintern_peace_1"
+	file = "motherrussia.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "comintern_peace_2"
+	file = "theredarmy.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "comintern_peace_3"
+	file = "sovietvictory.ogg"
+	volume = 0.65
+}
+
+# Comintern War:
+
+music = {
+	name = "comintern_war_1"
+	file = "themightofsovietunion.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "comintern_war_2"
+	file = "cominterntheme.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "comintern_war_3"
+	file = "thegreatpatrioticwar.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "entering_budapest"
+	file = "entering_budapest.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "baikal_amur_mainline"
+	file = "baikal_amur_mainline.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "baikal_amur_mainline_march"
+	file = "baikal_amur_mainline_march.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "the_decembrists"
+	file = "the_decembrists.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "march_of_the_soviet_marines"
+	file = "march_of_the_soviet_marines.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "gruppa_krovi"
+	file = "gruppa_krovi.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "moskva_odessa"
+	file = "moskva_odessa.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "eduard_artemyev_flight"
+	file = "eduard_artemyev_flight.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "eduard_artemyev_parting"
+	file = "eduard_artemyev_parting.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "eduard_artemyev_siberiade"
+	file = "eduard_artemyev_siberiade.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "eduard_artemyev_solaris"
+	file = "eduard_artemyev_solaris.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "georgy_sviridov_snowstorm"
+	file = "georgy_sviridov_snowstorm.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "georgy_sviridov_troika"
+	file = "georgy_sviridov_troika.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "dos_mukasan_aral"
+	file = "dos_mukasan_aral.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "dont_fool_around_america"
+	file = "dont_fool_around_america.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "do_russians_want_another_war"
+	file = "do_russians_want_another_war.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "geles_veidrodyje"
+	file = "geles_veidrodyje.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "obeshchanie_vesny"
+	file = "obeshchanie_vesny.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "prokofiev_battle_on_the_ice"
+	file = "prokofiev_battle_on_the_ice.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "prokofiev_dance_of_the_knights"
+	file = "prokofiev_dance_of_the_knights.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "prokofiev_peter_and_the_wolf"
+	file = "prokofiev_peter_and_the_wolf.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "zdravstvuj_pesnya_marathon"
+	file = "zdravstvuj_pesnya_marathon.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "shostakovich_waltz_no_2"
+	file = "shostakovich_waltz_no_2.ogg"
+	volume = 0.65
+}

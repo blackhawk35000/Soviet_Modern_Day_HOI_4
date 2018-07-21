@@ -1,0 +1,534 @@
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+# PEACE SONGS ##################
+music = {
+	song = "general_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "general_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "general_peace_3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}
+}
+
+music = {
+	song = "allies_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+			has_government = democratic
+		}		
+	}	
+}
+
+music = {
+	song = "allies_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+			has_government = democratic
+		}		
+	}	
+}
+
+music = {
+	song = "axis_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+			has_government = fascism
+		}		
+	}	
+}
+
+music = {
+	song = "axis_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+			has_government = fascism
+		}		
+	}	
+}
+
+# WAR SONGS ####################
+
+music = {
+	song = "general_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "general_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "axis_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = fascism
+		}		
+	}	
+}
+
+music = {
+	song = "axis_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = fascism
+		}		
+	}	
+}
+
+music = {
+	song = "axis_war_3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = fascism
+		}		
+	}	
+}
+
+music = {
+	song = "axis_war_4"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = fascism
+		}		
+	}	
+}
+
+music = {
+	song = "allies_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = democratic
+		}		
+	}	
+}
+
+music = {
+	song = "allies_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = democratic
+		}		
+	}	
+}
+
+music = {
+	song = "comintern_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "comintern_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "comintern_peace_3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+			has_government = communism
+		}		
+	}	
+}
+
+
+music = {
+	song = "comintern_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "comintern_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+	song = "comintern_war_3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+			has_government = communism
+		}		
+	}	
+}
+
+music = {
+  song = "entering_budapest"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = yes
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "baikal_amur_mainline"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "baikal_amur_mainline_march"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "the_decembrists"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "moskva_odessa"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "eduard_artemyev_flight"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "eduard_artemyev_parting"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "eduard_artemyev_siberiade"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "eduard_artemyev_solaris"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "georgy_sviridov_snowstorm"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "georgy_sviridov_troika"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "dos_mukasan_aral"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "do_russians_want_another_war"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "dont_fool_around_america"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = yes
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "geles_veidrodyje"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "obeshchanie_vesny"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "prokofiev_battle_on_the_ice"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = yes
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "prokofiev_dance_of_the_knights"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = yes
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "prokofiev_peter_and_the_wolf"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "march_of_the_soviet_marines"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = yes
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "zdravstvuj_pesnya_marathon"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "shostakovich_waltz_no_2"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = no
+      TAG = SOV
+    }
+  }
+}
+
+music = {
+  song = "gruppa_krovi"
+  chance = {
+    modifier = {
+      factor = 2
+      has_war = yes
+      TAG = SOV
+    }
+  }
+}
